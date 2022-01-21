@@ -8,6 +8,15 @@ namespace TrackerLibrary
 {
     public class PrizeModel
     {
+        
+        
+        
+        
+        /// <summary>
+        /// unique identifier for price
+        /// </summary>
+        public int id { get; set; }
+
         /// <summary>
         /// represents the position of the team on the prize model
         /// </summary>

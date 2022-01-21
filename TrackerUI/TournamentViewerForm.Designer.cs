@@ -200,7 +200,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(749, 477);
+            this.ClientSize = new System.Drawing.Size(706, 450);
             this.Controls.Add(this.scoreButton);
             this.Controls.Add(this.VSlabel);
             this.Controls.Add(this.teamTwoScoreValue);
