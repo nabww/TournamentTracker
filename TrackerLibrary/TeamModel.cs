@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TrackerLibrary
+﻿namespace TrackerLibrary
 {
-   public class TeamModel
+    public class TeamModel
     {
         /// <summary>
         /// list of persons within the team
