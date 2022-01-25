@@ -32,7 +32,7 @@
             this.PlaceNumberLabel = new System.Windows.Forms.Label();
             this.headerLabel = new System.Windows.Forms.Label();
             this.orLabel = new System.Windows.Forms.Label();
-            this.placenameValue = new System.Windows.Forms.TextBox();
+            this.placeNameValue = new System.Windows.Forms.TextBox();
             this.PlaceNamelabel = new System.Windows.Forms.Label();
             this.PrizeAmountValue = new System.Windows.Forms.TextBox();
             this.PrizeAmountLabel = new System.Windows.Forms.Label();
@@ -83,13 +83,14 @@
             this.orLabel.TabIndex = 14;
             this.orLabel.Text = "-or-";
             // 
-            // placenameValue
+            // placeNameValue
             // 
-            this.placenameValue.Location = new System.Drawing.Point(230, 127);
-            this.placenameValue.Multiline = true;
-            this.placenameValue.Name = "placenameValue";
-            this.placenameValue.Size = new System.Drawing.Size(213, 35);
-            this.placenameValue.TabIndex = 16;
+            this.placeNameValue.AccessibleName = "placeNameValue";
+            this.placeNameValue.Location = new System.Drawing.Point(230, 127);
+            this.placeNameValue.Multiline = true;
+            this.placeNameValue.Name = "placeNameValue";
+            this.placeNameValue.Size = new System.Drawing.Size(213, 35);
+            this.placeNameValue.TabIndex = 16;
             // 
             // PlaceNamelabel
             // 
@@ -154,6 +155,7 @@
             this.createPrizeButton.TabIndex = 23;
             this.createPrizeButton.Text = "Create Prize";
             this.createPrizeButton.UseVisualStyleBackColor = true;
+            this.createPrizeButton.Click += new System.EventHandler(this.createPrizeButton_Click);
             // 
             // CreatePrizeForm
             // 
@@ -167,7 +169,7 @@
             this.Controls.Add(this.PrizePercentageValue);
             this.Controls.Add(this.PrizeAmountValue);
             this.Controls.Add(this.PrizeAmountLabel);
-            this.Controls.Add(this.placenameValue);
+            this.Controls.Add(this.placeNameValue);
             this.Controls.Add(this.PlaceNamelabel);
             this.Controls.Add(this.orLabel);
             this.Controls.Add(this.headerLabel);
@@ -190,7 +192,7 @@
         private System.Windows.Forms.Label PlaceNumberLabel;
         private System.Windows.Forms.Label headerLabel;
         private System.Windows.Forms.Label orLabel;
-        private System.Windows.Forms.TextBox placenameValue;
+        private System.Windows.Forms.TextBox placeNameValue;
         private System.Windows.Forms.Label PlaceNamelabel;
         private System.Windows.Forms.TextBox PrizeAmountValue;
         private System.Windows.Forms.Label PrizeAmountLabel;
