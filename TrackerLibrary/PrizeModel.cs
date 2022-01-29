@@ -33,7 +33,7 @@
         {
                     
         }
-        public PrizeModel(string placeName, string placeNumber, string prizeAmount, string PrizePercentage)
+        public PrizeModel(string placeName, string placeNumber, string prizeAmount, string prizePercentage)
         {
             PlaceName = placeName;
             int PlaceNumberValue = 0;
@@ -42,11 +42,11 @@
 
             decimal prizeAmountValue = 0;
             decimal.TryParse(prizeAmount,out prizeAmountValue);
-            prizeAmount = prizeAmountValue;
+            PrizeAmount =  prizeAmount;
 
 
             double prizePercentageValue = 0;
-            double.TryParse(PrizePercentage, out prizePercentageValue);
+            double.TryParse(prizePercentage,out prizePercentageValue);
             PrizePercentage = prizePercentageValue;
 
            
