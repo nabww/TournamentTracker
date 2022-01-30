@@ -42,7 +42,7 @@
 
             decimal prizeAmountValue = 0;
             decimal.TryParse(prizeAmount,out prizeAmountValue);
-            PrizeAmount =  prizeAmount;
+            PrizeAmount =  prizeAmountValue;
 
 
             double prizePercentageValue = 0;
