@@ -26,7 +26,8 @@ namespace TrackerUI
         {
             if (ValidateForm())
             {
-                PrizeModel model = new PrizeModel(placeNameValue.Text,
+                PrizeModel model = new PrizeModel(
+                    placeNameValue.Text,
                     placeNumberValue.Text,
                     PrizeAmountValue.Text,
                     PrizePercentageValue.Text);
@@ -38,19 +39,21 @@ namespace TrackerUI
             }
             else
             {
-                MessageBox.Show("This form has invalid information. Please Check and try Again!");
+                MessageBox.Show("This Form Has Invalid Information. Please Check and Retry!");
             }
-        } 
+
+        }
+
         private bool ValidateForm()
         {
-            bool output = true;
+            bool output=true;
             int placeNumber = 0;
             bool placeNumberValidnumber = int.TryParse(placeNumberValue.Text, out placeNumber);
             if (placeNumberValidnumber==false)
             {
                 output = false;
             }
-            if(placeNumber<1)
+            if (placeNumber<1)
             {
                 output =false;
             }
@@ -63,25 +66,25 @@ namespace TrackerUI
 
 
             bool prizeAmountValid = decimal.TryParse(PrizeAmountValue.Text, out prizeAmount);
-            bool prizePercentageValid =double.TryParse(PrizePercentageValue.Text, out prizePercentage);
+            bool prizePercentageValid = double.TryParse(PrizePercentageValue.Text, out prizePercentage);
 
             if (prizeAmountValid==false||prizePercentageValid==false)
             {
                 output = false;
             }
-            if(prizeAmount<=0&&prizePercentage<=0)
+            if (prizeAmount<=0&&prizePercentage<=0)
             {
-                output =false; 
+                output =false;
             }
-            if(prizePercentage<0||prizePercentage>100)
+            if (prizePercentage<0||prizePercentage>100)
             {
                 output=false;
             }
             return output;
-            
+
 
         }
-        
+
 
     }
 }
